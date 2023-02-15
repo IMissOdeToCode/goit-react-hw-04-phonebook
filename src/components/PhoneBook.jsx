@@ -19,7 +19,6 @@ const PhoneBook = () => {
 
   useEffect(() => {
     const write = JSON.stringify(contacts);
-    console.log(write);
     window.localStorage.setItem('my-contacts', write);
   }, [contacts]);
 

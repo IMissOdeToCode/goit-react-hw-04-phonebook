@@ -17,7 +17,8 @@ const ContactsForm = ({ onSubmit }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    const result = onSubmit({ name, number });
+    // const result = onSubmit({ name, number });
+    const result = onSubmit({ ...state });
     if (result) {
       reset();
     }
