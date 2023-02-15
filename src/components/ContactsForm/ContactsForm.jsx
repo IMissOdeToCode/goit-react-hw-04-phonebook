@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import initialState from './initialState';
+import initialState from '../utils/initialState';
 
-import css from './PhoneBook.module.scss';
+import css from './ContactsForm.module.scss';
 
 const ContactsForm = ({ onSubmit }) => {
   const [state, setState] = useState({ ...initialState });
@@ -17,7 +17,6 @@ const ContactsForm = ({ onSubmit }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    // const result = onSubmit({ name, number });
     const result = onSubmit({ ...state });
     if (result) {
       reset();

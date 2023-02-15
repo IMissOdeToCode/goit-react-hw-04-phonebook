@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 import Notiflix from 'notiflix';
 
-import ContactsList from './ContactsList';
-import ContactsFilter from './ContsctsFilter';
-import ContactsForm from './ContactsForm';
+import ContactsList from '../ContactsList/ContactsList';
+import ContactsFilter from '../ContactsFilter/ContactsFilter';
+import ContactsForm from '../ContactsForm/ContactsForm';
 
-import defaultContacts from './contacts';
+import defaultContacts from '../utils/contacts';
 
 import css from './PhoneBook.module.scss';
 

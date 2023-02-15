@@ -1,0 +1,39 @@
+.contactsList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+  padding: 15px;
+
+  list-style: none;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: row;
+
+  gap: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.delButton {
+  display: inline-block;
+  margin: 0;
+  padding: 5px;
+  border-radius: 3px;
+  border-style: none;
+
+  height: 20px;
+
+  cursor: pointer;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: rgb(41, 237, 168);
+}
